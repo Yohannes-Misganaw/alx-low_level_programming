@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ -z "$CFILE" ]; then
+    echo "Error: Please set the CFILE environment variable to the C file you want to compile."
+    exit 1
+fi
+
+OUTPUT_FILE=${CFILE%.*}.s
+
+gcc -S -masm=intel "$CFILE" -o "$OUTPUT_FILE"
+
+echo "Generated assembly code saved in $OUTPUT_FILE"
