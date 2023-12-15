@@ -3,7 +3,8 @@
 #include <time.h>
 
 /**
- * main - Entry point, prints the last digit of a random number and its relation to 0.
+ * main - Entry point, prints the last digit of a random number and its
+ * relation to 0.
  *
  * Return: Always 0 (Success)
  */
